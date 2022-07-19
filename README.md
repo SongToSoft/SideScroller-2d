@@ -5,5 +5,6 @@
 
 ![image](https://github.com/SongToSoft/SideScroller-2d/blob/main/Images/screen.png)
 
+Для перезапуска игры можно нажать пробел.
 Проект создан на C++ с использованием фреймворка SFML.
 Исполняемый файл лежит по пути: SideScroller-2D\x64\Debug

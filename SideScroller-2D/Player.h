@@ -1,7 +1,6 @@
 #pragma once
 
 #include "Shooter.h"
-#include "Bullet.h"
 
 class Player : public Shooter {
 public:

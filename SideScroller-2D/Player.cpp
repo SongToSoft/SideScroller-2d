@@ -1,10 +1,11 @@
 #include "Player.h"
+#include "Bullet.h"
 #include "Game.h"
 
 #define PLAYER_POSITION {200, 300}
 #define PLAYER_SIZE {100, 50}
 #define PLAYER_SPEED 0.5f
-#define CRASH_HEIGHT 570
+#define CRASH_HEIGHT 565
 #define RATE_FIRE 1.5
 
 Player::Player() {
@@ -27,6 +28,9 @@ void Player::update(const float deltaTime) {
 		auto playerVerticalPosition = transformComponent->getPosition().y;
 
 		if (mouseVerticalPosition > playerVerticalPosition) {
+			if ((playerVerticalPosition + transformComponent->getSize().y) > CRASH_HEIGHT) {
+				isHit = true;
+			}
 			transformComponent->setPositionY(playerVerticalPosition + speed * deltaTime);
 		}
 		else {

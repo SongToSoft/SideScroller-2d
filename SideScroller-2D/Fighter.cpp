@@ -4,8 +4,6 @@
 #define FIGHTER_SIZE {138, 50}
 #define FIGHTER_FIRE_RATE 2
 #define FIGHTER_OFFSET 100
-#define LOW_DIRECTION -0.2
-#define HIGH_DIRECTION 0.2
 
 Fighter::Fighter() {
 	transformComponent->setSize(FIGHTER_SIZE);
@@ -31,7 +29,7 @@ void Fighter::update(const float deltaTime) {
 	else {
 		auto time = static_cast<float>(clock.getElapsedTime().asSeconds());
 		if (time > FIGHTER_FIRE_RATE) {
-			direction.y -= LOW_DIRECTION + static_cast<float>(rand()) * static_cast<float>(HIGH_DIRECTION - LOW_DIRECTION) / RAND_MAX;
+			direction.y *= -1;
 			shoot();
 			clock.restart();
 		}
