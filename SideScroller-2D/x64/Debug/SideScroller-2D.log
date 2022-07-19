@@ -1,2 +1,19 @@
-﻿  Game.cpp
-  SideScroller-2D.vcxproj -> C:\Users\bogda\source\repos\SideScroller-2D\x64\Debug\SideScroller-2D.exe
+﻿  ArtilleryStrike.cpp
+  Bird.cpp
+  Bomber.cpp
+  Bullet.cpp
+  Fighter.cpp
+c:\users\bogda\onedrive\документы\github\sidescroller-2d\sidescroller-2d\fighter.cpp(34): warning C4244: -=: преобразование "double" в "T", возможна потеря данных
+          with
+          [
+              T=float
+          ]
+  Game.cpp
+  main.cpp
+  Node.cpp
+  Player.cpp
+  Shooter.cpp
+  SpriteComponent.cpp
+  TransformComponent.cpp
+  Создание кода...
+  SideScroller-2D.vcxproj -> C:\Users\bogda\OneDrive\Документы\GitHub\SideScroller-2d\SideScroller-2D\x64\Debug\SideScroller-2D.exe
