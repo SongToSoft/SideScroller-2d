@@ -13,13 +13,13 @@
 #define SKY_BLUE_COLOR sf::Color(135, 206, 235)
 #define GROUND_POSITION {0, 530}
 
-#define START_SPAWN_TIME 3500
-#define SPAWN_TIME_STEP 10
+#define START_SPAWN_TIME 3000
+#define SPAWN_TIME_STEP 50
 #define MINIMAL_SPAWN_TIME 1000
 
-#define BIRD_SPAWN_CHANCE 30
-#define BOMBER_SPAWN_CHANCE 75
-#define FIGHTRE_SPAWN_CHANCE 95
+#define BIRD_SPAWN_CHANCE 10
+#define BOMBER_SPAWN_CHANCE 45
+#define FIGHTRE_SPAWN_CHANCE 80
 
 int Game::currentScore = 0;
 int Game::highScore = 0;
